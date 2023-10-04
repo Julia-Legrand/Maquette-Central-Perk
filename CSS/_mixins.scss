@@ -1,0 +1,22 @@
+/***** FONTS *****/
+
+@mixin title1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 40px;
+}
+
+@mixin title2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+}
+
+@mixin title3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+@mixin paragraphs {
+    font-family: 'Montserrat', sans-serif;
+}

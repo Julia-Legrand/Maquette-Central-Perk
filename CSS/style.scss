@@ -1,0 +1,224 @@
+@import 'variables';
+@import 'mixins';
+
+/***** GLOBAL *****/
+h1 {
+    @include title1;
+}
+
+h2 {
+    @include title2;
+}
+
+h3 {
+    @include title3;
+}
+
+p {
+    @include paragraphs;
+}
+
+/***** HEADER *****/
+header {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+            .icone img {
+                height: 100px;
+                width: auto;
+            }
+            .navbar-nav a {
+                margin: 10px 20px;
+            }
+            .socials i {
+                color: black;
+                margin: 10px;
+                font-size: 20px;
+            }
+    }
+    .home-title {
+        background-image: url(../images/wallpaper.jpg);
+        background-position: center;
+        background-size: cover;
+        height: 90vh;
+            .container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 60px;
+            }
+    }
+}
+
+/***** PRODUCTS *****/
+#products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 0;
+    background: linear-gradient(to top, $lightgrey 0%,$lightgrey 50%, white 50%, white 100%);
+        .pictures img {
+            height: 500px;
+            width: auto;
+            margin: 80px 30px;
+        }
+        .ourProducts {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                a {
+                    color: black;
+                    text-decoration: underline;
+                    padding: 20px;
+                }
+                img {
+                    height: 250px;
+                    width: auto;
+                    margin: 10px;
+                }
+        }
+}
+
+/***** ABOUT US *****/
+#aboutUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .presentation {
+            width: 300px;
+            margin: 40px 60px;
+                .link {
+                    padding-top: 10px;
+                    padding-bottom: 70px;
+                    a {
+                        color: black;
+                        text-decoration: underline;
+                    }
+                }
+                .text {
+                    padding: 30px 0;
+                }
+        }
+        .buffet1 img {
+            height: 350px;
+            width: auto;
+            margin: 50px;
+        }
+}
+
+/***** SERVICES *****/
+#services {
+    background-color: $lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+        .catering {
+            display: flex;
+            margin-top: 50px;
+            margin-bottom: 80px;
+                .catering-img {
+                    width: 600px;
+                }
+                img {
+                    width: 500px;
+                    height: 330px;
+
+                }
+                .cateringService {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    height: 330px;
+                    width: 400px;
+                }
+                a {
+                    color: black;
+                    text-decoration: underline;
+                }
+        }
+        .location {
+            display: flex;
+                .ourCafe {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    width: 600px;
+                    padding-right: 200px;
+                }
+                .ourCafe img {
+                    width: 400px;
+                    height: auto;
+                }
+        }
+        .openingHours {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 50px;
+                .openingHours-img img {
+                    width: 600px;
+                }
+                .hours {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-evenly;
+                    width: 400px;
+                    padding: 60px;
+                }
+        }
+}
+
+/***** GUEST COMMENT *****/
+#guestComments {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .comment {
+            width: 500px;
+            margin: 60px;
+                p {
+                    color: grey;
+                }
+        }
+        .guest {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+                img {
+                height: auto;
+                width: 200px;
+                margin: 10px;
+                border-radius: 64% 36% 34% 66% / 48% 48% 52% 52%;
+                }
+        }
+}
+
+/***** CONTACT *****/
+#contact {
+    background-color: $lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        .newsletter {
+            width: 500px;
+            margin: 20px;
+                .newsletter-title {
+                    width: 300px;
+                    padding-bottom: 30px;
+                }
+                input {
+                    width: 400px;
+                    background-color: $lightgrey;
+                }
+        }
+        .findUs {
+            display: flex;
+            flex-direction: column;
+            margin: 80px 0;
+                .findUs-title {
+                    padding-bottom: 60px;
+                }
+                .places {
+                    display: flex;
+                }
+        }
+}
