@@ -159,8 +159,13 @@ header .home-title .container {
   justify-content: space-between;
   margin-bottom: 50px;
 }
+#services .openingHours .openingHours-img {
+  -webkit-clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 90% 0, 100% 20%, 100% 100%, 0 100%);
+}
 #services .openingHours .openingHours-img img {
   width: 600px;
+  height: 300px;
 }
 #services .openingHours .hours {
   display: flex;
