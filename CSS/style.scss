@@ -46,6 +46,7 @@ header {
                 flex-direction: column;
                 align-items: center;
                 padding-top: 60px;
+                text-align: center;
             }
     }
 }
@@ -66,6 +67,7 @@ header {
             display: flex;
             flex-direction: column;
             align-items: center;
+            text-align: center;
                 a {
                     color: black;
                     text-decoration: underline;
@@ -197,10 +199,11 @@ header {
     background-color: $lightgrey;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
+    padding: 50px 0;
         .newsletter {
             width: 500px;
-            margin: 20px;
+            margin-bottom: 20px;
                 .newsletter-title {
                     width: 300px;
                     padding-bottom: 30px;
@@ -213,12 +216,276 @@ header {
         .findUs {
             display: flex;
             flex-direction: column;
-            margin: 80px 0;
                 .findUs-title {
                     padding-bottom: 60px;
+                    padding-left: 10px;
                 }
                 .places {
                     display: flex;
+                        p {
+                            padding: 10px;
+                        }
                 }
         }
+}
+
+/***** FOOTER *****/
+footer {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+            .navbar-brand {
+                color: white;
+                margin: 10px;
+            }
+            .navbarMenu {
+                display: flex;
+                    a {
+                    margin: 10px 20px;
+                    color: white;
+                    }
+            }
+            .socials i {
+                color: white;
+                margin: 10px;
+                font-size: 20px;
+            }
+    }
+}
+
+/***** RWD *****/
+@media all and (max-width:1070px) {
+    footer .navbar .navbarMenu a {
+        margin: 0;
+    }
+}
+
+@media all and (max-width:1020px) {
+    #services {
+        .catering {
+            flex-direction: column;
+            margin: 0;
+                .catering-img {
+                    width: 400px;
+                    margin: 20px;
+                        img {
+                            width: 400px;
+                            margin-top: 10px;
+                        }
+                }
+                .cateringService {
+                    margin: 20px;
+                }
+        }
+        .location {
+            flex-direction: column;
+            align-items: center;
+                .location-img {
+                    width: 200px;
+                    margin: 0 0 20px 0;
+                        img {
+                            width: 200px;
+                        }
+                }
+                .ourCafe {
+                    width: 400px;
+                    margin: 20px;
+                    padding: 0;
+                }
+        }
+        .openingHours {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+                .openingHours-img {
+                    width: 400px;
+                    margin: 20px 0;
+                        img {
+                            width: 400px;
+                        }
+                }
+                .hours {
+                    width: 300px;
+                    padding: 0;
+                    text-align: center;
+                }
+        }
+    }
+
+    #contact {
+        flex-direction: column;
+        align-items: center;
+            .newsletter {
+                width: 400px;
+                padding-left: 10px;
+                padding-bottom: 40px;
+                    input {
+                        width: 300px;
+                    }
+            }
+            .findUs {
+                width: 400px;
+                    .findUs-title {
+                        padding: 0 0 20px 10px;
+                    }
+            }
+    }
+}
+
+@media all and (max-width:930px) {
+    #aboutUs .presentation {
+        margin: 20px;
+        .link {
+            padding: 0;
+        }
+        .text {
+            padding: 20px 0;
+        }
+    }
+    #aboutUs .buffet1 img {
+        margin: 10px;
+        height: 200px;
+    }
+
+    footer .navbar .navbarMenu a {
+            font-size: 12px;
+    }
+    footer .navbar .socials i {
+        margin: 5px;
+        font-size: 20px;
+    }
+}
+
+@media all and (max-width:670px) {
+    footer .navbar .navbarMenu {
+        display: none;
+    }
+}
+
+@media all and (max-width:580px) {
+    #aboutUs {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #guestComments {
+        flex-direction: column-reverse;
+            .comment {
+                margin: 20px;
+                width: auto;
+            }
+            .guest img {
+                margin: 20px;
+            }
+    }
+}
+
+@media all and (max-width:420px) {
+    header .home-title {
+        height: 70vh;
+    }
+
+    #products {
+        padding: 0 0 20px 0;
+            .pictures {
+                .pic1 {
+                    margin: 0 0 10px 0;
+                    width: 300px;
+                    height: auto;
+                }
+                .pic2, .pic3 {
+                    display: none;
+                }
+            }
+    }
+    #products .ourProducts {
+        .pic7, .pic8 {
+            display: none;
+        }
+    }
+    #aboutUs .buffet1 {
+        display: none;
+    }
+
+    #services {
+        justify-content: center;
+        text-align: center;
+            .catering {
+                align-items: center;
+                width: 280px;
+                    .catering-img {
+                        width: 280px;
+                        height: auto;
+                        margin: 10px;
+                            img {
+                                width: 280px;
+                                height: auto;
+                                margin-top: 10px;
+                            }
+                    }
+            }
+            .catering .cateringService {
+                width: 280px;
+                height: auto;
+                margin: 10px;
+                    a {
+                        padding-bottom: 10px;
+                    }
+            }
+            .location {
+                width: 280px;
+                    .location-img {
+                        width: 150px;
+                        margin: 0 0 10px 0;
+                            img {
+                            width: 150px;
+                            }
+                    }
+                    .ourCafe {
+                        width: 280px;
+                        margin: 10px;
+                        padding: 0;
+                    }
+            }
+            .openingHours {
+                margin-bottom: 10px;
+                    .openingHours-img {
+                        width: 280px;
+                        margin: 10px 0;
+                            img {
+                                width: 280px;
+                            }
+                    }
+                    .hours {
+                        width: 280px;
+                        padding: 0;
+                    }
+            }
+    }
+
+    #contact {
+        padding: 20px 0;
+        .newsletter {
+            width: 280px;
+            padding: 0;
+                .newsletter-title {
+                    width: 280px;
+                    padding: 10px;
+                }
+                form {
+                    width: 280px;
+                    padding: 10px;
+                }
+                input {
+                    width: 250px;
+                }
+        }
+        .findUs {
+            width: 280px;
+            font-size: 12px;
+                .findUs-title {
+                    padding: 10px;
+                }
+        }
+    }
 }
